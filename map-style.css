@@ -22,9 +22,13 @@ body {
     flex-direction: column;
 }
 
-.map {
+.mobile_map {
     z-index: 0;
     width: 100%;
+}
+
+.tablet_map {
+    display: none;
 }
 
 .home {
@@ -151,7 +155,6 @@ body {
     text-align: left;
     color: #151515;
     max-width: 311px;
-    height: 104px;
     display: flex;
 
 }
@@ -168,4 +171,135 @@ i {
 
 i:hover {
     color: #FFFFFF;
+}
+
+.footer_info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 38px;
+}
+
+@media(min-width:768px) {
+    .mobile_map {
+        display: none;
+    }
+
+    .tablet_map {
+        display: block;
+        width: 100%;
+    }
+
+    .back_button {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        margin-left: 39px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        background-color: #151515;
+        padding: 88px 39px 88px 39px;
+        gap: 48px;
+    }
+
+    .title {
+        max-width: 223px;
+        font-family: Big Shoulders Display;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 50px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .address {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .street {
+        font-family: Big Shoulders Display;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 32px;
+        text-align: left;
+        color: #D5966C;
+        max-width: 350px;
+    }
+
+    .small_txt {
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #FFFFFF;
+        opacity: 0px;
+
+    }
+
+    .info {
+        max-width: 398px;
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #FFFFFF;
+
+
+    }
+
+    .Footer {
+        background-color: #D5966C;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        
+        padding: 56px 39px 56px 39px;
+
+    }
+
+    .footer_txt {
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #151515;
+        max-width: 281px;
+        display: flex;
+
+    }
+
+    .contact {
+        display: flex;
+        gap: 20px;
+    }
+
+    i {
+        color: #151515;
+    }
+
+    i:hover {
+        color: #FFFFFF;
+    }
+
+    .footer_info{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 65px;
+    }
 }

@@ -41,9 +41,13 @@ body {
     text-align: left;
 }
 
-.image_hero {
+.image_hero_mobile {
     width: 100%;
 
+}
+
+.image_hero_tablet {
+    display: none;
 }
 
 .small_txt {
@@ -112,6 +116,7 @@ body {
 
 }
 
+
 .your_day {
     display: flex;
     justify-content: center;
@@ -119,8 +124,20 @@ body {
     gap: 25px;
 }
 
-.grid-1 {
+.mobile_grid_1 {
     width: 100%;
+}
+
+.tablet_grid_1 {
+    display: none;
+}
+
+.text_box_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 21px;
 }
 
 .title2 {
@@ -147,6 +164,22 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 16px;
+}
+
+.tablet_grid_2 {
+    display: none;
+}
+
+.mobile_grid_2 {
+    display: block;
+}
+
+.tablet_grid_3 {
+    display: none;
+}
+
+.mobile_grid_3 {
+    display: block;
 }
 
 .inspired_info {
@@ -179,6 +212,8 @@ body {
 
 }
 
+
+
 .footer {
     background-color: #151515;
     display: flex;
@@ -205,10 +240,228 @@ body {
     gap: 20px;
 }
 
+.logo_txt_footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 38px;
+
+}
+
 i {
+
     color: #FFFFFF;
 }
 
 i:hover {
     color: #D5966C;
+}
+
+@media(min-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 120px
+    }
+
+    .Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 0px;
+
+    }
+
+    .art_gallery {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 48px;
+        margin-left: -60px;
+        
+    }
+
+
+    .title {
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 55px;
+        text-align: left;
+    }
+
+    .image_hero_mobile {
+        display: none;
+
+    }
+
+    .image_hero_tablet {
+        display: block;
+        width: 100%;
+    }
+
+    .small_txt {
+
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        width: 343px;
+        color: #444444;
+    }
+
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 16px;
+        gap: 32px;
+
+    }
+
+
+    .your_day {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 68px;
+    }
+
+    .mobile_grid_1 {
+        display: none;
+    }
+
+    .tablet_grid_1 {
+        display: block;
+    }
+
+    .title2 {
+        max-width: 223px;
+    }
+
+    .small_txt2 {
+        max-width: 223px;
+    }
+
+
+
+    .come_inspired {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .inspired_container_tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    .tablet_grid_2 {
+        display: block;
+    }
+
+    .mobile_grid_2 {
+        display: none;
+    }
+
+    .tablet_grid_3 {
+        display: block;
+    }
+
+    .mobile_grid_3 {
+        display: none;
+    }
+
+    .inspired_info {
+        background-color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        padding: 85px 28px 85px 29px;
+
+    }
+
+
+    .title3 {
+        font-family: Big Shoulders Display;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 45px;
+        text-align: left;
+        color: white;
+        max-width: 223px;
+    }
+
+    .small_txt3 {
+        font-family: Outfit;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+
+        color: #FFFFFF;
+        max-width: 223px;
+
+    }
+
+    .footer {
+        background-color: #151515;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 38px;
+        padding: 56px 39px 56px 39px;
+       
+    }
+    
+    .small_txt4 {
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: white;
+        max-width: 281px;
+    
+    }
+    
+    .contact {
+        display: flex;
+        gap: 20px;
+    }
+    
+    i {
+    
+        color: #FFFFFF;
+    }
+    
+    i:hover {
+        color: #D5966C;
+    }
+
+    .logo_txt_footer{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 65px;
+    }
+
+
+
 }
